@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Legal Pages</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {font-family: Arial, sans-serif; background:#f8fafc; color:#0f172a; text-align:center; padding:50px;}
+    h1 {margin-bottom:30px;}
+    a.button {
+      display:inline-block;
+      padding:12px 24px;
+      margin:10px;
+      font-size:16px;
+      color:white;
+      background:#0ea5e9;
+      border-radius:8px;
+      text-decoration:none;
+      transition: background 0.2s;
+    }
+    a.button:hover {background:#0284c7;}
+    footer {margin-top:40px; font-size:0.9rem; color:#64748b;}
+  </style>
+</head>
+<body>
+  <h1>Legal Pages</h1>
+  <p>Please choose a document:</p>
+  <a class="button" href="terms.html">Terms of Service</a>
+  <a class="button" href="privacy.html">Privacy Policy</a>
+  <footer>
+    © <span id="year"></span> for_analytics
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
